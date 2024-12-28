@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #313338;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+
+.br {
+    height: 15vh;
+}
+
+#proyectos {
+    height: 2vh;
+}
+
+.profile {
+    margin: auto;
+    background-color: #111214;
+    /*width: 45%;*/
+    border-radius: 15px;
+}
+
+ /* Para pantallas más pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .profile {
+        width: 85%; /* Más ancho en teléfonos */
+    }
+    .contacto {
+        width: 30%;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .profile {
+        width: 65%;
+    }
+    .contacto {
+        width: 20%;
+    }
+}
+
+/* Para pantallas más grandes (PC) */
+@media (min-width: 1025px) {
+    .profile {
+        width: 40%; /* Más estrecho en PC */
+    }
+    .contacto {
+        width: 10%;
+    }
+}
+
+.banner {
+    background: url(img/banner.gif);
+    position: relative;
+    background-size: 100%;
+    background-position-y: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 20vh;
+}
+
+.nodisponible {
+    border: #ff2828;
+    background-color: #ff4444;
+    border-radius: 50%;
+    width: 0.75vw;
+    height: 0.75vw;
+    cursor: pointer;
+}
+
+.disponible {
+    border: #00ff7b;
+    background-color: #50ff90;
+    border-radius: 50%;
+    width: 0.75vw;
+    height: 0.75vw;
+    cursor: pointer;
+}
+
+.disponiblecont {
+    padding: 0.4vw;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px; /* Ajusta la posición del texto arriba del elemento */
+    left: 2%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hover-element:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+h1, h3 {
+    margin-top: 3vh;
+    width: fit-content;
+}
+
+.margin {
+    margin: 1vw;
+}
+
+.padding {
+    padding: 1.25vw;
+}
+
+button {
+    background-color: #5865F2;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 7.5vh;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+.btndisabled {
+    cursor: not-allowed;
+    background-color: #454FBF;
+    color: #a3a3a3;
+}
+
+.disabled {
+    color: #a3a3a3;
+    cursor: not-allowed;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.projectcontainer {
+    margin: auto;
+    background-color: #111214;
+    width: 55%;
+    border-radius: 15px;
+    padding: 1.5vw;
+}
+
+.contacto {
+    margin: auto;
+    margin-bottom: 0;
+    background-color: #111214;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1vw;
+}
+
+.center {
+    text-align: center;
+}
+
+.project {
+    background-color: #232528;
+    width: 98%;
+    border-radius: 10px;
+    padding: 0.5vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a {
+    color: white;
+}
+
+h1 i {
+    padding: 0.5vw;
+    font-size: 0.75em;
+    background-color: #232528;
+    border-radius: 5px;
+    border: #2A2B2F;
+}
+
+h2 i {
+    font-size: 1em;
+}
+
+h2 {
+    margin-top: 0.25vh;
+}
+
+.preview {
+    border-radius: 5px;
+    width: 80%;
+}
+
+.projectbtn {
+    position: absolute;
+}
+
+.contacto i {
+    font-size: 1.75em;
+    margin: 0.25vw;
+}
